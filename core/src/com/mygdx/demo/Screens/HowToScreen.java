@@ -18,7 +18,7 @@ public class HowToScreen extends Window{
     private static final ImageButtonStyle backButtonStyle;
     private TuruncsAdventure game;
     static {
-        TextureAtlas textureAtlas = new TextureAtlas(Gdx.files.internal("howToTileSet.pack"));
+        TextureAtlas textureAtlas = new TextureAtlas(Gdx.files.internal("assets/howToTileSet.pack.txt"));
         windowStyle = new WindowStyle(new BitmapFont(), Color.BLACK,
                 new TextureRegionDrawable(textureAtlas.findRegion("howToPlay")));
         backButtonStyle = new ImageButtonStyle();

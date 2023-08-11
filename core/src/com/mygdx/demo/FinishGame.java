@@ -7,11 +7,7 @@ import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.utils.Align;
 import com.mygdx.demo.Screens.FinishScreen;
-import com.mygdx.demo.Screens.QCreator;
-import com.mygdx.demo.Screens.QuestScreen;
-import com.mygdx.demo.TuruncsAdventure;
 
 public class FinishGame extends ApplicationAdapter implements InputProcessor {
 
@@ -54,6 +50,7 @@ public class FinishGame extends ApplicationAdapter implements InputProcessor {
     public boolean keyDown(int keycode) {
         if (keycode == Input.Keys.NUM_1) {
             gamePlayQ.setVisible(true);
+            
             return true;
         }
 

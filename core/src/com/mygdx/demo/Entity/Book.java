@@ -12,7 +12,6 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.bullet.softbody.btSparseSdf3.Cell;
 import com.mygdx.demo.Levels.LevelState;
 import com.mygdx.demo.Screens.GameScreen;
-import com.mygdx.demo.Screens.GameplayQuestionScreen;
 import com.mygdx.demo.TuruncsAdventure;
 
 public class Book extends InteractiveTile {

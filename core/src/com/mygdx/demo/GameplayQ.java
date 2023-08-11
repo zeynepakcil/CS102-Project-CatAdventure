@@ -7,7 +7,6 @@ import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.utils.Align;
 import com.mygdx.demo.Screens.QCreator;
 
 public class GameplayQ extends ApplicationAdapter implements InputProcessor {

@@ -54,7 +54,6 @@ public class QCreator extends Window {
                 getTitleTable().removeActor(questionAsk);
                 getTitleTable().removeActor(yesButton);
                 getTitleTable().removeActor(noButton);
-                System.out.println("jdnf");
 
                 if (!firstshown) {
                     firstshown = true;
@@ -96,7 +95,6 @@ public class QCreator extends Window {
                     });
 
                 }
-                System.out.println("djnfnjmffnddjfjnjfjfdjfdjnfjnfj");
 
             }
         });
@@ -106,10 +104,8 @@ public class QCreator extends Window {
                 setVisible(false);
             }
         });
-        //getTitleTable().add(questionAsk).size(700 / 5, 100 / 5).padLeft(400).padTop(100);
         getTitleTable().add(yesButton).size(96 / 2, 64 / 2).padLeft(200).padTop(300);
         getTitleTable().add(noButton).size(96 / 2, 64 / 2).padRight(200).padTop(300);
-        // getTitleTable().add(noButton).size(96 / 2, 64 / 2).padLeft(10);
 
         setClip(false);
         setTransform(true);

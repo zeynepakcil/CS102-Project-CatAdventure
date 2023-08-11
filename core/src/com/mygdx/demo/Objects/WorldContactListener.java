@@ -47,7 +47,7 @@ public class WorldContactListener implements ContactListener {
                 break;
             case TuruncsAdventure.CAT_BIT | TuruncsAdventure.FLOOR_BIT:
                 System.out.println("dieee");
-                LevelState.loseLive(3);
+                LevelState.loseLive(LevelState.getLives());
                 if (LevelState.getLives() == 0) {
                     TuruncsAdventure.manager.get("Audio/music/kl-peach-game-over-iii-142453.mp3", Music.class).play();
                     Cat.isDead = true;

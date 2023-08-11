@@ -2,13 +2,10 @@ package com.mygdx.demo;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.utils.Align;
-import com.mygdx.demo.Screens.QCreator;
 import com.mygdx.demo.Screens.QuestScreen;
 
 public class QuestPlay extends ApplicationAdapter implements InputProcessor {
@@ -46,16 +43,10 @@ public class QuestPlay extends ApplicationAdapter implements InputProcessor {
     public void dispose() {
         stage.dispose();
     }
-
     @Override
     public boolean keyDown(int keycode) {
-        if (keycode == Input.Keys.NUM_1) {
-            gamePlayQ.setVisible(true);
-            return true;
-        }
-
-        return false;
-    }
+        return true;
+    } 
 
     @Override
     public boolean keyUp(int keycode) {

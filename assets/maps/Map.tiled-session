@@ -7,10 +7,10 @@
     "fileStates": {
         "Map.tmx": {
             "scale": 4,
-            "selectedLayer": 8,
+            "selectedLayer": 10,
             "viewCenter": {
-                "x": 369.75,
-                "y": 203.75
+                "x": 7154.5,
+                "y": 158.25
             }
         },
         "images.tsx": {

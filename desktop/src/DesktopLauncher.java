@@ -10,6 +10,8 @@ public class DesktopLauncher {
 		config.setWindowedMode(1200, 610);
 		config.setForegroundFPS(60);
 		config.setTitle("Turunc's Adventure");
+		config.setResizable(false);
+		config.setWindowIcon("assets/WindowIcon.png");
 		new Lwjgl3Application(new TuruncsAdventure(), config);
 	}
 }

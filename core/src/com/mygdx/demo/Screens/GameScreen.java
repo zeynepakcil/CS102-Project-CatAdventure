@@ -238,10 +238,12 @@ public class GameScreen implements Screen {
             dispose();
         }
 
+            if(isPaused){
 
             stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
             stage.draw();
 
+            }
     }
 
     public boolean gameOver() {

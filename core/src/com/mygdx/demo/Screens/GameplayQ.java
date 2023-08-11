@@ -1,4 +1,4 @@
-package com.mygdx.demo;
+package com.mygdx.demo.Screens;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -7,23 +7,22 @@ import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.mygdx.demo.Screens.FinishScreen;
+import com.mygdx.demo.TuruncsAdventure;
 
-public class FinishGame extends ApplicationAdapter implements InputProcessor {
+public class GameplayQ extends ApplicationAdapter implements InputProcessor {
 
     private Stage stage;
-    private FinishScreen gamePlayQ;
-    private TuruncsAdventure t;
+    private QCreator gamePlayQ;
 
-    public void create(Stage stage, TuruncsAdventure t) {
+    public void create(Stage stage) {
         this.stage = stage;
-        this.t =t;
-        gamePlayQ = new FinishScreen(t);
-        gamePlayQ.setSize(TuruncsAdventure.WIDTH - 10, TuruncsAdventure.HEIGHT - 10);
+
+        gamePlayQ = new QCreator();
+        gamePlayQ.setSize(TuruncsAdventure.WIDTH -10, TuruncsAdventure.HEIGHT-10);
         gamePlayQ.setModal(true);
         gamePlayQ.setVisible(true);
         gamePlayQ.setMovable(true);
-        gamePlayQ.setPosition(TuruncsAdventure.WIDTH / TuruncsAdventure.PPM, TuruncsAdventure.HEIGHT / TuruncsAdventure.PPM);
+        gamePlayQ.setPosition(TuruncsAdventure.WIDTH /TuruncsAdventure.PPM, TuruncsAdventure.HEIGHT/  TuruncsAdventure.PPM);
         stage.addActor(gamePlayQ);
 
         InputMultiplexer multiplexer = new InputMultiplexer();
@@ -50,7 +49,6 @@ public class FinishGame extends ApplicationAdapter implements InputProcessor {
     public boolean keyDown(int keycode) {
         if (keycode == Input.Keys.NUM_1) {
             gamePlayQ.setVisible(true);
-            
             return true;
         }
 

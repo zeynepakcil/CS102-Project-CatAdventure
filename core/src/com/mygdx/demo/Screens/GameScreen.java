@@ -28,7 +28,6 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.mygdx.demo.Entity.Cat;
 import com.mygdx.demo.Entity.Enemy;
-import com.mygdx.demo.FinishGame;
 import com.mygdx.demo.Levels.LevelState;
 import com.mygdx.demo.Objects.WorldContactListener;
 import com.mygdx.demo.Objects.WorldCreator;
@@ -49,8 +48,8 @@ public class GameScreen implements Screen {
     private Cat cat;
     public Music music;
     private Stage stage;
-    private Texture pauseButtonTexture;
-    private Texture pauseMenuBackgroundTexture; // Texture for the pause menu background
+    //private Texture pauseButtonTexture;
+    //private Texture pauseMenuBackgroundTexture; // Texture for the pause menu background
     private Texture resumeButtonTexture;
     private Texture quitButtonTexture;
     private TextureRegionDrawable buttonDrawable;
@@ -87,14 +86,14 @@ public class GameScreen implements Screen {
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
 
-        pauseButtonTexture = new Texture("pMini.png"); // Replace with your pause button texture
-        pauseMenuBackgroundTexture = new Texture("Menu/pause.png"); // Replace with your pause menu background texture
-        resumeButtonTexture = new Texture("Menu/continue.png"); // Replace with your resume button texture
-        //restartButtonTexture = new Texture("restart_button.png"); // Replace with your restart button texture
-        quitButtonTexture = new Texture("Menu/quit2.png"); // Replace with your quit button texture
+        //pauseButtonTexture = new Texture("pMini.png"); 
+        //pauseMenuBackgroundTexture = new Texture("Menu/pause.png"); 
+        resumeButtonTexture = new Texture("Menu/continue.png"); 
+        //restartButtonTexture = new Texture("restart_button.png"); 
+        quitButtonTexture = new Texture("Menu/quit2.png"); 
 
         buttonDrawable = new TextureRegionDrawable(new TextureRegion(resumeButtonTexture));
-
+/* 
         ImageButton pauseButton = new ImageButton(new TextureRegionDrawable(new TextureRegion(pauseButtonTexture)));
         pauseButton.setPosition(Gdx.graphics.getWidth() - pauseButton.getWidth() - 10, Gdx.graphics.getHeight() - pauseButton.getHeight() - 10);
         pauseButton.addListener(new ClickListener() {
@@ -102,10 +101,10 @@ public class GameScreen implements Screen {
             public void clicked(InputEvent event, float x, float y) {
                 showPauseMenu();
             }
-        });
+        }); */
 
         // Add actors to the stage
-        stage.addActor(pauseButton);
+        //stage.addActor(pauseButton);
         stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
         stage.draw();
         jumpCount =0;
@@ -140,13 +139,13 @@ public class GameScreen implements Screen {
             }
         });
 
-        Table pauseMenuTable = new Table();
+        /* Table pauseMenuTable = new Table();
         pauseMenuTable.setFillParent(true);
         pauseMenuTable.background(new TextureRegionDrawable(new TextureRegion(pauseMenuBackgroundTexture)));
         pauseMenuTable.add(continueButton).padBottom(20).row();
         pauseMenuTable.add(quitButton);
         stage.addActor(pauseMenuTable);
-
+ */
     }
 
     public TextureAtlas getAtlas() {
@@ -301,9 +300,9 @@ public class GameScreen implements Screen {
         levelBar.dispose();
         batch.dispose();
         font.dispose();
-        pauseButtonTexture.dispose();
+/*         pauseButtonTexture.dispose();
         pauseMenuBackgroundTexture.dispose();
-        resumeButtonTexture.dispose();
+ */        resumeButtonTexture.dispose();
         quitButtonTexture.dispose();
         stage.dispose();
     }

@@ -15,11 +15,11 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
-import com.mygdx.demo.FinishGame;
-import com.mygdx.demo.GameplayQ;
-import com.mygdx.demo.QuestPlay;
 import com.mygdx.demo.TuruncsAdventure;
 import com.mygdx.demo.Entity.Cat;
+import com.mygdx.demo.Screens.FinishGame;
+import com.mygdx.demo.Screens.GameplayQ;
+import com.mygdx.demo.Screens.QuestPlay;
 
 public class LevelState implements Disposable {
     public Stage stage;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="450" height="13" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="384">
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="450" height="13" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="386">
  <tileset firstgid="1" source="tiles/nature-paltformer-tileset-16x16 - Copy.tsx"/>
  <tileset firstgid="78" source="tiles/images.tsx"/>
  <tileset firstgid="79" source="tiles/level_tileset.tsx"/>
@@ -263,6 +263,7 @@
   <object id="337" x="5472" y="128" width="16" height="16"/>
   <object id="338" x="6272" y="96" width="16" height="16"/>
   <object id="339" x="6592" y="96" width="16" height="16"/>
+  <object id="385" x="166.667" y="162"/>
  </objectgroup>
  <objectgroup id="15" name="floor">
   <object id="350" x="255.18" y="203.032" width="209.289" height="4.8672"/>

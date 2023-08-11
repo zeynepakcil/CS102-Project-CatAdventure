@@ -1,0 +1,26 @@
+allGPquestions.png
+size: 1854, 631
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+question1
+  rotate: false
+  xy: 0, 0
+  size: 1100, 516
+  orig: 1100, 516
+  offset: 0, 0
+  index: -1
+question2
+  rotate: false
+  xy: 1100, 0
+  size: 754, 145
+  orig: 754, 145
+  offset: 0, 0
+  index: -1
+question3
+  rotate: false
+  xy: 0, 516
+  size: 1031, 115
+  orig: 1031, 115
+  offset: 0, 0
+  index: -1
